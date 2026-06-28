@@ -17,5 +17,8 @@ jobs:
           distribution: temurin
           java-version: '24'
 
+      - name: Add execute permission
+        run: chmod +x ./mvnw
+
       - name: Run tests
         run: ./mvnw test
